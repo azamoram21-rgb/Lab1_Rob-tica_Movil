@@ -1,0 +1,6 @@
+Invoking command in '/home/al2/ros2_ws/src/lab111/build/lab111': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/al2/ros2_ws/src/lab111 -DCMAKE_INSTALL_PREFIX=/home/al2/ros2_ws/src/lab111/install/lab111
+Invoked command in '/home/al2/ros2_ws/src/lab111/build/lab111' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/al2/ros2_ws/src/lab111 -DCMAKE_INSTALL_PREFIX=/home/al2/ros2_ws/src/lab111/install/lab111
+Invoking command in '/home/al2/ros2_ws/src/lab111/build/lab111': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/al2/ros2_ws/src/lab111/build/lab111 -- -j12 -l12
+Invoked command in '/home/al2/ros2_ws/src/lab111/build/lab111' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/al2/ros2_ws/src/lab111/build/lab111 -- -j12 -l12
+Invoking command in '/home/al2/ros2_ws/src/lab111/build/lab111': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/al2/ros2_ws/src/lab111/build/lab111
+Invoked command in '/home/al2/ros2_ws/src/lab111/build/lab111' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/al2/ros2_ws/src/lab111/build/lab111

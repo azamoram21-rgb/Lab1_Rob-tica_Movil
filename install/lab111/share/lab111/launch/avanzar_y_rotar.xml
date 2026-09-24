@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="very_simple_robot_simulator" exec="kobuki_simulator.py" name="kobuki_simulator" output="screen" />
+  <node pkg="very_simple_robot_simulator" exec="world_state_gui.py" name="world_state_gui" output="screen" />
+  <node pkg="lab111" exec="dead_reckoning_nav.py" name="dead_reckoning_nav" output="screen" />
+  <node pkg="lab111" exec="pose_loader.py" name="pose_loader" output="screen" />
+</launch>
