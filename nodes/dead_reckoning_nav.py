@@ -43,11 +43,14 @@ class DeadReckoningNav(Node):
         ypos = goal_pose[1]
         apos = goal_pose[2]
         ang_final = apos - (math.pi/2)
+        factor_correccion = 1.11
         comand_list = []
         comand_list.append((self.lineal_vel, 0.0, xpos/self.lineal_vel)) # muevo en x
-        comand_list.append((0.0, self.rot_vel, (math.pi/2)/self.rot_vel)) # roto en el eje hasta llegar a y
+        tiempo_rotacional_1 = ((math.pi/2)/self.rot_vel) * factor_correccion # acá agrego esto para la 1.2
+        comand_list.append((0.0, self.rot_vel, tiempo_rotacional_1)) # roto en el eje hasta llegar a y
         comand_list.append((self.lineal_vel, 0.0, ypos/self.lineal_vel)) # me desplazo en y
-        comand_list.append((0.0, self.rot_vel, abs(ang_final)/self.rot_vel)) # roto al angulo deseado
+        tiempo_rotacional_2 = (abs(ang_final)/self.rot_vel) * factor_correccion # lo mismo, para la 1.2
+        comand_list.append((0.0, self.rot_vel, tiempo_rotacional_2)) # roto al angulo final deseado (pose)
         self.aplicar_velocidad(comand_list)
 
     def accion_mover(self, msg):

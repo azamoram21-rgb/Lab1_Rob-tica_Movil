@@ -3,5 +3,5 @@
   <node pkg="very_simple_robot_simulator" exec="world_state_gui.py" name="world_state_gui" output="screen" />
   <node pkg="lab111" exec="dead_reckoning_nav.py" name="dead_reckoning_nav" output="screen" />
   <node pkg="lab111" exec="pose_loader.py" name="pose_loader" output="screen" />
-  <node pkg="lab111" exec="wasd.py" name="wasd" output="screen" />
-</launch>
+  <node pkg="lab111" exec="trajectorylogger.py" name="trajectorylogger" output="screen" />
+</launch> 

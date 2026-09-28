@@ -14,6 +14,7 @@ install(PROGRAMS
   nodes/pose_loader.py
   nodes/wasd.py
   nodes/obstacle_detector.py
+  nodes/trajectorylogger.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
